@@ -93482,7 +93482,7 @@ return A.t($async$nH,r)},
 mZ(){var s=0,r=A.u(t.Pf),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3
 var $async$mZ=A.p(function(a4,a5){if(a4===1){o.push(a5)
 s=p}while(true)switch(s){case 0:a=new A.bn(new A.af($.a6,t.fB),t.pN)
-a0=A.dg("https://accounts.spotify.com/authorize?response_type=code&client_id=02418a8456574b5cb62c47abb34877c0"+("&scope="+A.ln(2,"app-remote-control user-read-playback-state streaming user-read-email user-read-private",B.J,!1))+("&redirect_uri="+A.ln(2,u.F,B.J,!1)),0,null)
+a0=A.dg("https://accounts.spotify.com/authorize?response_type=code&client_id=6ad4ddc21f4c4746a3a0e47492a02c0b"+("&scope="+A.ln(2,"app-remote-control user-read-playback-state streaming user-read-email user-read-private",B.J,!1))+("&redirect_uri="+A.ln(2,u.F,B.J,!1)),0,null)
 a1=window
 a1.toString
 m=A.aGu(a1,"message",new A.a55(n,a),!1,t.SA)
@@ -93510,7 +93510,7 @@ return A.m(a.a,$async$mZ)
 case 12:k=a5
 J.KS(m)
 A.f6().$1("Web login: 'code' diterima, menukar token di backend...")
-a1=A.dg("https://rhythora-backend-new.vercel.app/api/exchange-token",0,null)
+a1=A.dg("https://rhythora-backend-update.vercel.app/api/exchange-token",0,null)
 c=t.N
 b=A.a1(["Content-Type","application/json"],c,c)
 s=13
@@ -93559,7 +93559,7 @@ lg(){var s=0,r=A.u(t.Pf),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d
 var $async$lg=A.p(function(a,b){if(a===1){o.push(b)
 s=p}while(true)switch(s){case 0:p=4
 s=7
-return A.m(A.aHm(A.dg("https://rhythora-backend-new.vercel.app/api/guest-token",0,null),null),$async$lg)
+return A.m(A.aHm(A.dg("https://rhythora-backend-update.vercel.app/api/guest-token",0,null),null),$async$lg)
 case 7:m=b
 s=m.b===200?8:10
 break
@@ -93612,7 +93612,7 @@ s=6
 return A.m(B.bh.oY(),$async$kt)
 case 6:throw A.e(A.cM("Sesi berakhir. Silakan login kembali (refresh token tidak valid)."))
 case 5:p=8
-e=A.dg("https://rhythora-backend-new.vercel.app/api/refresh-token",0,null)
+e=A.dg("https://rhythora-backend-update.vercel.app/api/refresh-token",0,null)
 d=t.N
 c=A.a1(["Content-Type","application/json"],d,d)
 s=11
