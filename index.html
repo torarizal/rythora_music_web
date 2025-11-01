@@ -33,6 +33,17 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <script>
+  // Cek apakah URL ini punya parameter ?code=...
+  const params = new URLSearchParams(window.location.search);
+  if (params.has('code') || params.has('error')) {
+    // Kirim kembali ke window pembuka (app utama Flutter)
+    if (window.opener) {
+      window.opener.postMessage(window.location.href, "*");
+      window.close(); // Tutup popup
+    }
+  }
+</script>
 
   <!-- ===== 1. SCRIPT SPOTIFY WEB SDK ===== -->
   <!-- Wajib ada untuk memutar musik premium di web -->
