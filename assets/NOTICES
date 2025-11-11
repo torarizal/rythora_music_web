@@ -5196,6 +5196,7 @@ USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 --------------------------------------------------------------------------------
 flutter_lints
+palette_generator
 path_provider
 path_provider_linux
 path_provider_platform_interface
